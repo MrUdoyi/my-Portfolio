@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Praise Udoyi</title>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="stylesheet" href="/port.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/2d0ea7c96d.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <div class="nav">
+                    <div class="logo"><h1>PU</h1></div>
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fas fa-times" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fas fa-bars" onclick="openmenu()"></i>
+                </div>
+                <div class="header-text">
+                    <h1>Hello, I'm <span>Praise</span></h1><br>
+                    <p> Web Developer & Graphic Designer</p>
+                </div>
+            </div>
+        </div>
+        <!-- ---ABOUT--- -->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <section id="word-sphere-section">
+                            <div id="word-sphere-container">
+                                <div class="word">Creativity</div>
+                                <div class="word">Developer</div>
+                                <div class="word">Designer</div>
+                                <div class="word">Technology</div>
+                                <div class="word">Passion</div>
+                                <div class="word">Strategy</div>
+                                <div class="word">Connect</div>
+                                <div class="word">Team player</div>
+                            </div>
+                        </section>
+                    </div>
+                    <div  data-aos="fade-up"
+                    data-aos-anchor-placement="center-bottom" class="about-col-2">
+                        <h1 class="subtitle">About <span>Me</span></h1>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis quaerat consequatur
+                            in molestias eaque, esse, dolores magni minus a aliquam harum voluptatem eligendi quo qui,
+                            reprehenderit repellendus. Error, ex impedit?
+                        </p>
+                        <div class="tab-title">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skils">
+                            <ul>
+                                <li><span>Graphic Design</span><br>Designing Captivating flyers & contents</li>
+                                <li><span>Web Development</span><br>Responsive & Interactive web Development</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2024 - Current</span><br>Graphic designer at BUCC</li>
+                                <li><span>2024 - Current</span><br>Senior Graphic designer at the King's Portal Assmbly</li>
+                                <li><span>2021 - 2022</span><br>Internship at STEMlab</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2022 - Current</span><br>Babcock University</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ---- portfolio ----- -->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title"><span>My</span> Works</h1>
+                <div class="worklist">
+                    <div data-aos="fade-right" class="work">
+                        <img src="/images/work1.png">
+                        <div class="layer">
+                            <h3>BUCC Flyer</h3>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" class="work">
+                        <img src="/images/work2.png">
+                        <div class="layer">
+                            <h3>The King's portal Assembly Flyer</h3>
+                        </div>
+                    </div>
+                    <div data-aos="fade-left" class="work">
+                        <img src="/images/work3.jpg" alt="image from Freepik">
+                        <div class="layer">
+                            <h3>Farm Company Webpage</h3>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn">See more..</a>
+            </div>
+        </div>
+
+        <!-- ------- contact ------ -->
+         <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact <span>Me</span></h1>
+                        <p><i class="fa-regular fa-envelope"></i>praiseudoyi58@gmail.com</p>
+                        <p>+234 80710355543</p>
+                        <div class="social-icons">
+                            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                        <a href="/my documents/Udoyi Praise -CV.pdf" download class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form   action="https://formspree.io/f/mlekybyk" method="POST">
+                            <input type="text" name="Name" placeholder="Your name" required>
+                            <input type="email" name="email" placeholder="Your Email" required>
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                            <p id="my-form-status"></p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Copyright @ Praise 2024</p>
+            </div>
+         </div>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+        <script src="/script.js"></script>
+    </body>
+</html>
